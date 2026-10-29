@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login{
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.login h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login label{
+    display: block;
+    margin-bottom: 25px;
+}
+
+.login input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.login button{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.login p{
+    text-align: center;
+    margin-top: 15px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>Online Shopping Cart</h2>
+        </div>
+
+        <div class="admin-info">
+            <span>Welcome, Admin</span>
+            <a href="../../index.html">Logout</a>
+        </div>
+
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <nav class="nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="product.html">Products</a>
+                <a href="add-products.html">Add Products</a>
+                <a href="edit-products.html">Edit Product</a>
+                <a href="users.html">Users</a>
+                <a href="orders.html">Orders</a>
+                <a href="../../index.html">Logout</a>
+            </nav>
+    </aside>
+
+        <main class="main">
+            <h1>Admin Dashboard</h1>
+            <p>
+                Manage your online shopping store
+            </p>
+
+            <div class="summary-cards">
+                <div class="total-products">
+                  <h3>Total Products</h3>
+                  <p id="total-products"></p>
+                </div>
+
+                <div class="total-users">
+                  <h3>Total Users</h3>
+                  <p id="total-users"></p> 
+                </div>
+
+                <div class="total-orders">
+                  <h3>Total Orders</h3>
+                  <p id="total-orders"></p>
+                </div>
+
+                <div class="total-revenue">
+                  <h3>Total Revenue</h3>
+                  <p id="total-revenue"></p>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="recent-orders-body">
+                        //order data will be loaded dynamically
+                        //from the backend/database later.
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="product-overview">
+                <h2>Product Overview</h2>
+                 <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-overview-body">
+                        //data will be loaded dynamically
+                        //from the backend/database later.
+                    </tbody>
+                 </table>
+            </div>
+
+            <div class="low-stock-products">
+ <h2>Low Stock Products</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Stock</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="low-stock-body">
+                        <!--
+                            Low stock product data will be loaded
+                         dynamically from the backend/database later.
+                        -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quick-action">
+               <h2>Quick Actions</h2>
+
+               <div class="action-links">
+                <a href="add-product.html">
+                    Add Product
+                </a>
+
+                <a href="products.html">
+                    View Products
+                </a>
+
+                <a href="users.html">
+                    View Users
+                </a>
+
+                <a href="orders.html">
+                    View Orders
+                </a>
+               </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="footer">
+        <p>@ 2026 Online Shopping Cart.</p>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

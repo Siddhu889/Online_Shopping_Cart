@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="users.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>Online Shopping Cart</h2>
+        </div>
+        <div class="admin-info">
+            <span>Welcome, Admin</span>
+            <a href="../../index.html">Logout</a>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <nav class="nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="products.html">Products</a>
+                <a href="add-products.html">Add Products</a>
+                <a href="edit-products.html">Edit Product</a>
+                <a href="users.html">Users</a>
+                <a href="orders.html">Orders</a>
+                <a href="../../index.html">Logout</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <div class="page-header">
+                <h1>User Management</h1>
+                <p>View and manage registered users.</p>
+            </div>
+
+            <div class="search-section">
+                <label for="search-user">Search User</label>
+
+                <input type="text"
+                id="search-user"
+                placeholder="Search by name or email">
+
+                <button id="search-button">Search</button>
+            </div>
+
+            <div class="users-section">
+                <h2>Registered Users</h2>
+
+                <table class="users-table">
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Registration</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                
+                <tbody id="userTableBody">
+                    <!--User data will be added using Javascript-->
+                </tbody>
+                </table>
+             <p id="no-users-message">No users found.</p>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="users.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-product.html</title>
+    <link rel="stylesheet" href="add-products.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>Online Shopping Cart</h2>
+        </div>
+
+        <div class="admin-info">
+            <span>Welcome, Admin</span>
+            <a href="../../index.html">Logout</a>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <nav class="nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="products.html">Products</a>
+                <a href="add-products.html">Add Products</a>
+                <a href="edit-products.html">Edit Product</a>
+                <a href="users.html">Users</a>
+                <a href="orders.html">Orders</a>
+                <a href="../../index.html">Logout</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <div class="product-header">
+                <h1>Product Management</h1>
+                <a href="add-products.html">Add New Product</a>
+            </div>
+
+            <div class="add-new-product">
+                <h1>Add New Product</h1>
+
+                <form id="add-new-product">
+                 
+                    <div class="form-group">
+                        <label for="product-name">
+                            Product Name
+                        </label>
+
+                        <input
+                        type="text"
+                        id="product-name"
+                        name="productName"
+                        placeholder="Enter product name"
+                        required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-category">
+                            Category
+                        </label>
+
+                        <select
+                        id="product-category"
+                        name="category"
+                        required>
+
+                        <option valu="">
+                            Select Category
+                        </option>
+
+                        <option value="Electronics">
+                            Electronics
+                        </option>
+
+                        <option value="Fashion">
+                            Fashion
+                        </option>
+
+                        <option value="Home">
+                            Home
+                        </option>
+                    </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="product-price">
+                            Price
+                        </label>
+
+                        <input
+                        type="number"
+                        id="product-price"
+                        name="price"
+                        placeholder="Enter product price"
+                        min="0"
+                        required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-stock">
+                            Stock Quantity
+                        </label>
+
+                        <input 
+                        type="number"
+                        id="product-stock"
+                        name="stock"
+                        placeholder="Enter stock quantity"
+                        min="0"
+                        required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-image">
+                            Product Image
+                        </label>
+
+                        <input
+                        type="file"
+                        id="product-image"
+                        name="productImage"
+                        accept="image/*"
+                        required>
+
+                    </div>
+
+
+                     <div class="form-group">
+
+                        <label for="product-description">
+                            Product Description
+                        </label>
+
+                        <textarea
+                            id="product-description"
+                            name="description"
+                            rows="5"
+                            placeholder="Enter product description"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <button 
+                        type="submit"
+                        class="add-product-btn"
+                        >
+                    Add Product</button>
+
+                    <a href="products.html"
+                    class="cancel-btn">
+                Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="add-products.js"></script>
+</body>
+</html>

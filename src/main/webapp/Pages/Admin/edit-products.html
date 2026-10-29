@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="edit-products.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>Online Shopping Cart</h2>
+        </div>
+
+        <div class="admin-info">
+            <span>Welcome, Admin</span>
+            <a href="../../index.html">Logout</a>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <nav class="nav">
+                 <a href="dashboard.html">Dashboard</a>
+                <a href="products.html">Products</a>
+                <a href="add-products.html">Add Products</a>
+                <a href="edit-products.html">Edit Product</a>
+                <a href="users.html">Users</a>
+                <a href="orders.html">Orders</a>
+                <a href="../../index.html">Logout</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <div class="product-header">
+                <h1>Product Management</h1>
+
+                <a href="add-products.html">Add New Product</a>
+
+            </div>
+
+            <section class="product-table-section">
+                <h2>Edit Products</h2>
+
+                <div class="product-controls">
+                    <input type="text" id="search-product"
+                    placeholder="Search product...">
+
+                    <button id="search-btn">Search</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="product-list">
+                         <!--Products will come here using Javascript -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="edit-product-form">
+                <h2>Edit Product</h2>
+
+                <form id="edit-product-form">
+                    <div class="form-group">
+                        <label for="product-name">
+                            Product Name
+                        </label>
+
+                        <input type="text" id="product-name"
+                        name="productName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-category">
+                            Category
+                        </label>
+
+                        <select id="product-category" name="category" 
+                        required>
+
+                        <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="Electronics">
+                                Electronics
+                            </option>
+
+                            <option value="Fashion">
+                                Fashion
+                            </option>
+
+                            <option value="Home">
+                                Home
+                            </option>
+
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-price">
+                            Price
+                        </label>
+
+                        <input type="number" id="product-price"
+                        name="price" min="0"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-stock">
+                            Stock
+                        </label>
+
+                        <input type="number" id="product-stock"
+                        name="stock" min="0" required>
+
+                        <div class="form-group">
+                            <label for="product-image">
+                                Prdouct Image
+                            </label>
+
+                            <input type="file" id="product-image" 
+                            name="productImage" accept="image/*">
+                        </div>
+
+                        <div class="form-group">
+
+                        <label for="product-description">
+                            Description
+                        </label>
+
+                        <textarea
+                            id="product-description"
+                            name="description"
+                            rows="5"
+                            required
+                        ></textarea>
+
+                    </div>
+                        <div class="form-actions">
+
+                        <button
+                            type="submit"
+                            class="update-product-btn"
+                        >
+                            Update Product
+                        </button>
+
+                        <a
+                            href="edit-product.html"
+                            class="cancel-btn"
+                        >
+                            Cancel
+                        </a>
+
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="edit-products.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="checkout-info">
+            <h1>Checkout</h1>
+            <form id="customer-information">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="tel" id="mobile-number" name="mobile-number">
+
+            </form>
+
+        </div>
+
+        <div class="delivery-address">
+            <h2>Delivery Address</h2>
+
+            <form id="delivery-address">
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+
+                <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" name="pincode">
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+
+            </form>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div id="cart-products">
+
+            </div>
+
+            <div class="subtotal">
+
+            </div>
+
+            <div class="delivery-charge">
+
+            </div>
+
+            <div class="total-amount">
+
+            </div>
+        </div>
+
+        <div class="button">
+            <button id="confirm-button">Continue to Payment</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>@ 2026 Online Shopping Cart. All rights reserved.</p>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>

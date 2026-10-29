@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="order-summary">
+            <h1>Order Summary</h1>
+            
+        </div>
+
+        <div class="payment-details">
+            <h1>Payment Details</h1>
+        
+            <form id="payment-form">
+                <div class="payment-method-selection">
+                    <h3>Select Payment Method</h3>
+
+                    <label for="debit-card">
+                        <input type="radio" id="debit-card"
+                        name="payment-method" value="debit-card">
+
+                        Debit Card
+                    </label>
+
+                    <label for="credit-card">
+                        <input type="radio" id="credit-card"
+                        name="payment-method" value="credit-card">
+
+                        Credit Card
+                    </label>
+
+                    <label for="upi">
+                        <input
+                        type="radio" id="upi"
+                        name="payment-method" value="upi">
+
+                        GPay / UPI
+                    </label>
+
+                    <label for="cod">
+                        <input type="radio" id="cod"
+                        name="payment-method" value="cod">
+
+                        Cash on Delivery
+                    </label>
+                </div>
+
+                <div id="payment-method-details">
+
+                </div>
+
+        <div class="payment-confirmation">
+            <label for="payment-confirm">
+                <input type="checkbox" id="payment-confirm" name="payment-confirm">
+
+                I confirm my order and payment details are correct.
+            </label>
+        </div>
+
+        <div class="button">
+            <button type="submit" id="confirm-button">Confirm Payment</button>
+        </div>
+
+    </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>@ 2026 Online Shopping Cart. All Rights are Reserved</p>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>

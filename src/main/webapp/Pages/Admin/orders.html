@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Management</title>
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h2>Online Shopping Cart</h2>
+        </div>
+        <div class="admin-info">
+            <span>Welcome, Admin</span>
+            <a href="../../index.html">Logout</a>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h3>Admin Panel</h3>
+            <nav>
+                 <a href="dashboard.html">Dashboard</a>
+                <a href="products.html">Products</a>
+                <a href="add-products.html">Add Products</a>
+                <a href="edit-products.html">Edit Product</a>
+                <a href="users.html">Users</a>
+                <a href="orders.html">Orders</a>
+                <a href="../../index.html">Logout</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="page-header">
+                <h1>Orders Management</h1>
+                <p>View and manage customer orders.</p>
+            </section>
+
+            <section class="order-controls">
+                <div class="search-box">
+                    <label for="search-order">Search Order</label>
+                    <input type="text" id="search-order" placeholder="Search by Order ID or Customer Name">
+                    <button id="search-button">Search</button>
+                </div>
+
+                <div class="filter-box">
+                    <label for="order-status-filter">Order Status</label>
+                    <select id="order-status-filter">
+                        <option value="all">All</option>
+                        <option value="pending">Pending</option>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="shipped">Shipped</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="orders-section">
+                <h2>All Orders</h2>
+
+                <div class="table-container">
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Order Date</th>
+                                <th>Total Amount</th>
+                                <th>Payment Status</th>
+                                <th>Order Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="orders-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Navigation bar - match index.jsp */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 74px;
+    padding: 0 54px;
+    margin: 0;
+    background-color: #15385d;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar .nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar .nav a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.navbar .nav a:hover {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.product-image {
+    width: 500px;
+    height: 600px;
+    flex-shrink: 0;
+    margin-top: 30px;
+}
+
+.product-image img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.product-info {
+    flex: 1;
+    margin-top: -10px;
+}
+
+.product-info h1 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    color: #222;
+}
+
+.price {
+    margin: 0 0 18px 0;
+    font-size: 23px;
+    font-weight: bold;
+    color: #444;
+}
+
+.description {
+    margin: 0 0 18px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.product-info p {
+    font-size: 18px;
+    color: #222;
+    margin: 12px 0;
+}
+
+.instock {
+    color: rgb(4, 244, 4);
+    font-weight: bold;
+}
+
+.outofstock {
+    color: red;
+    font-weight: bold;
+}
+
+.cart-button {
+    display: block;
+    margin-top: 18px;
+    padding: 12px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #FFD814;
+    color: #111111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    background-color: #f5c400;
+}
+
+.footer {
+    background-color: #1f3c5b;
+    color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
